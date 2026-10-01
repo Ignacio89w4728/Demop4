@@ -7,8 +7,10 @@ branches: [ "main" ]
 jobs: 
 tests: 
 runs-on: ubuntu-latest 
-steps: - name: Descargar el repositorio 
-uses: actions/checkout@v4 - name: Configurar Java 17 
+steps: 
+-name: Descargar el repositorio 
+uses: 
+actions/checkout@v4 -name: Configurar Java 17 
 uses: actions/setup-java@v4 
 with: 
 java-version: '17' 
